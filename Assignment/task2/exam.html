@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Essay Exam</title>
+    <link rel="stylesheet" href="../Task1/style.css">
+    <script src="../task2/examscript.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div style="display: flex;justify-content: space-between;">
+            <h2>Choose Difficulty Level</h2>
+            <h2 id="timer"></h2>
+        </div>
+        <form id="modeSelectionForm">
+            <input type="radio" id="easy" name="mode" value="easy">
+            <label for="easy">Easy</label><br>
+            <input type="radio" id="moderate" name="mode" value="moderate">
+            <label for="moderate">Moderate</label><br>
+            <input type="radio" id="hard" name="mode" value="hard">
+            <label for="hard">Hard</label><br><br>
+            <button type="button" id="startExam">Start Exam</button>
+            <button type="button" id="toggleQuestion" class="hidden">Toggle Question</button>
+        </form>
+
+        <div id="examSection" class="hidden">
+            <h3 id="essayQuestion"></h3>
+            <div id="essayInputContainer">
+                <textarea id="essayInput" rows="10" placeholder="Write your essay here..."></textarea>
+            </div>
+            <!-- <textarea id="essayInput" rows="10" placeholder="Write your essay here..."></textarea> -->
+            <p id="wordCount">Word count: 0</p>
+            <p id="remainingWords">Remaining words: </p>
+            <button type="button" id="submitEssay">Submit Essay</button>
+        </div>
+    </div>
+</body>
+</html>

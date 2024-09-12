@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../task1/style.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container-fluid bgcolor" style="padding: 10px 30rem;">
+        <div class="card" style="width: 36rem;">
+            <div class="card-body">
+                <h2 class="mb-4 text text-center">Registration Form</h2>
+                <form id="myForm">
+                        <label for="firstName" class="form-label my-2">First Name <span>*</span></label>
+                        <input type="text" id="firstName" class="form-control" placeholder="First Name">
+                        <div id="firstNameError" class="error hidden">First Name is required (only letters).</div>
+
+                        <label for="lastName" class="form-label my-2">Last Name <span>*</span></label>
+                        <input type="text" id="lastName" class="form-control" placeholder="Last Name">
+                        <div id="lastNameError" class="error hidden">Last Name is required (only letters).</div>
+                    
+                        <label for="email" class="form-label my-2">Email <span>*</span></label>
+                        <input type="email" id="email" class="form-control" placeholder="Email">
+                        <div id="emailError" class="error hidden">Enter a valid email.</div>
+                    
+                        <label for="contactNumber" class="form-label my-2">Contact <span>*</span></label>
+                        <input type="text" id="contactNumber" class="form-control" placeholder="Contact Number">
+                        <div id="contactError" class="error hidden">Contact Number is required (only numbers).</div>
+
+                        <label for="dob" class="form-label my-2">Date of Birth <span>*</span></label>
+                        <input type="date" id="dob" class="form-control" placeholder="Date of Birth">
+                        <div id="dobError" class="error hidden">Enter a valid Date Of Birth.</div>
+
+                        <label for="password" class="form-label my-2">Password <span>*</span></label>
+                        <input type="password" id="password" class="form-control" placeholder="Password">
+                        <div id="passwordError" class="error hidden">Password must be at least 8 characters, with an uppercase letter and a special character.</div>
+                    
+                        <label for="confirmPassword" class="form-label my-2">Confirm Password <span>*</span></label>
+                        <input type="password" id="confirmPassword" class="form-control" placeholder="Confirm Password">
+                        <div id="confirmPasswordError" class="error hidden">Passwords do not match.</div>
+                    
+                        <input type="checkbox" id="termsCheck" class="my-3"> Accept Terms and Conditions
+                        <div>
+                            <span>These are the first 100 characters of the terms and conditions...</span>
+                            <span class="more-text">Full Terms and Conditions are here.</span>
+                        </div>
+                        <span class="show-more">Read more</span>
+                        <div id="termsError" class="error hidden">You must accept the terms and conditions.</div>
+                    
+                        <div class="my-3">
+                            <button type="submit" class="btn btn-danger">Submit</button>
+                            <button type="reset" class="btn btn-secondary">Clear</button>
+                        </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Custom JS -->
+<script src="../task1/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+/* REGISTRATION CSS START */
+.bgcolor{
+    background-color: powderblue;
+}
+
+.error {
+    color: red;
+}
+
+.hidden {
+    display: none;
+}
+
+label span {
+    color: red;
+}
+
+.terms {
+    overflow: hidden;
+    max-height: 50px;
+}
+
+.more-text {
+    display: none;
+}
+
+.show-more {
+    cursor: pointer;
+    color: blue;
+}
+/* REGISTRATION CSS END */
+
+/* Exam CSS START */
+.text-danger {
+    color: red;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#timer {
+    font-weight: bold;
+    color: green;
+}
+/* EXAM CSS END */
